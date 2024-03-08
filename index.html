@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Decodificador de Texto</title>
+</head>
+<body>
+    <div class="container__titulo">
+        <h1 >Decodificador de Texto</h1>
+    </div>
+    
+    <main class="conteudo">
+        
+        <div class="container__conteudo">
+            <div class="container__imagem">
+                <img src="img/hackermansize.png" >
+            </div>
+            
+            <div class="container__input">
+                <input class="textoNormal">
+            </div>
+            <div class="container__botoes">
+                <button   onclick="encriptar()"  class="container__botao">Encripitar</button>
+                <button  id="desencriptar" onclick="desencriptar()" class="container__botao" disabled>Desencriptar</button>
+            </div>
+        </div> 
+ 
+        <div class="container__mensagens">
+            <p id="textoEncriptado"></p>
+            <div class="container__botao__copiar">
+                <button id="botaoCopia" onclick="copiarTexto()" class="container__botao">Copiar</button>
+            </div>
+        </div> 
+    </main>
+    
+</main>
+<script src="app.js" defer></script>
+</body>
+</html>
